@@ -38,7 +38,7 @@ class _MyHomeState extends State<MyHome> {
             Container(
               padding: EdgeInsets.only(left: 35, top: 130),
               child: Text(
-                'WELCOME TO KIDS 3D',
+                'WELCOME TO KIDZ-3D',
                 style: TextStyle(color: Colors.white, fontSize: 33),
               ),
             ),

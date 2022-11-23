@@ -59,7 +59,7 @@ class _MyLoginState extends State<MyLogin> {
                             decoration: InputDecoration(
                                 fillColor: Colors.grey.shade100,
                                 filled: true,
-                                hintText: "Register",
+                                hintText: "Password",
                                 border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(10),
                                 )),
@@ -79,11 +79,14 @@ class _MyLoginState extends State<MyLogin> {
                                 radius: 30,
                                 backgroundColor: Color(0xff4c505b),
                                 child: IconButton(
-                                    color: Colors.white,
-                                    onPressed: () {},
-                                    icon: Icon(
-                                      Icons.arrow_forward,
-                                    )),
+                                  color: Colors.white,
+                                  onPressed: () {
+                                    Navigator.pushNamed(context, 'home');
+                                  },
+                                  icon: Icon(
+                                    Icons.arrow_forward,
+                                  ),
+                                ),
                               )
                             ],
                           ),
@@ -97,6 +100,7 @@ class _MyLoginState extends State<MyLogin> {
                                 onPressed: () {
                                   Navigator.pushNamed(context, 'register');
                                 },
+                                style: ButtonStyle(),
                                 child: Text(
                                   'Sign Up',
                                   textAlign: TextAlign.left,
@@ -105,7 +109,6 @@ class _MyLoginState extends State<MyLogin> {
                                       color: Color(0xff4c505b),
                                       fontSize: 18),
                                 ),
-                                style: ButtonStyle(),
                               ),
                               TextButton(
                                   onPressed: () {},
